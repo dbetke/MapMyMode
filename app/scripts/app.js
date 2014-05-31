@@ -6,7 +6,7 @@ angular.module('trunkApp', [
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/main',
+        templateUrl: 'partials/main.html',
         controller: 'MainCtrl'
       })
       .otherwise({
