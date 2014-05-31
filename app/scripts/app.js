@@ -6,8 +6,8 @@ angular.module('trunkApp', [
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/main',
-        controller: 'MainCtrl'
+        templateUrl: 'partials/navbar',
+        controller: 'NavbarCtrl'
       })
       .otherwise({
         redirectTo: '/'

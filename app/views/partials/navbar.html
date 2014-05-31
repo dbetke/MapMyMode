@@ -1,3 +1,4 @@
+<div>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavbarCtrl">
   <div class="container-fluid">
     <div class="row">
@@ -16,30 +17,30 @@
       <div class="col-sm-10">
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <form class="navbar-form" role="search"> <!-- role=form?? -->
+          <form class="navbar-form" name = "routeForm" role="search"> <!-- role=form?? -->
             <div class="row">
               <div class="col-sm-5">
                 <div class="nav navbar-nav">
                   <div class="nav-question"><h4>What's important to you?</h4></div>
                   <!-- <li class="active"><a href="#">Link</a></li> -->
-                  <div class="btn-group select-priority" data-toggle="buttons">
+                  <div class="btn-group select-priority" >
                     <label class="btn btn-default btn-xs">
-                      <input type="radio" name="route-priority" id="time">
+                      <input type="radio" name="route-priority" id="time" ng-model = "formOptions.routeType" value = "fastest">
                       <span class="icon-time"></span>
                       <span class="label-text">Fastest</span>
                     </label>
                     <label class="btn btn-default btn-xs">
-                      <input type="radio" name="route-priority" id="cost">
+                      <input type="radio" name="route-priority" id="cost" ng-model = "formOptions.routeType" value = "cheapest">
                       <span class="icon-cost"></span>
                       <span class="label-text">Cheapest</span>
                     </label>
                     <label class="btn btn-default btn-xs">
-                      <input type="radio" name="route-priority" id="scenery">
+                      <input type="radio" name="route-priority" id="scenery" ng-model = "formOptions.routeType" value = "scenic">
                       <span class="icon-scenery"></span>
                       <span class="label-text">Most scenic</span>
                     </label>
                     <label class="btn btn-default btn-xs">
-                      <input type="radio" name="route-priority" id="difficulty">
+                      <input type="radio" name="route-priority" id="difficulty" ng-model = "formOptions.routeType" value = "easiest">
                       <span class="icon-difficulty"></span>
                       <span class="label-text">Easiest</span>
                     </label>
@@ -49,24 +50,24 @@
               <div class="col-sm-5">
                 <div class="nav navbar-nav navbar-left">
                   <div class="nav-question"><h4>What's your mode?</h4></div>
-                  <div class="btn-group select-mode" data-toggle="buttons">
+                  <div class="btn-group select-mode">
                     <label class="btn btn-default btn-xs">
-                      <input type="checkbox">
+                      <input type="checkbox" ng-model = "formOptions.transType.walk">
                       <span class="icon-walk"></span>
                       <span class="label-text">Walk</span>
                     </label>
                     <label class="btn btn-default btn-xs">
-                      <input type="checkbox">
+                      <input type="checkbox"  ng-model = "formOptions.transType.bike">
                       <span class="icon-bike"></span>
                       <span class="label-text">Bike</span>
                     </label>
                     <label class="btn btn-default btn-xs">
-                      <input type="checkbox">
+                      <input type="checkbox" ng-model = "formOptions.transType.bus">
                       <span class="icon-bus"></span>
                       <span class="label-text">Bus</span>
                     </label>
                     <label class="btn btn-default btn-xs">
-                      <input type="checkbox">
+                      <input type="checkbox" ng-model = "formOptions.transType.drive">
                       <span class="icon-car"></span>
                       <span class="label-text">Drive</span>
                     </label>                   
@@ -93,15 +94,15 @@
             <div class="row">
               <div class="col-sm-5">
                 <div class="nav-question"><h5>Where are you?</h5></div>
-                <input type="text" class="form-control" placeholder="123 Candyland Ln, Asheville NC">
+                <input type="text" class="form-control" placeholder="123 Candyland Ln, Asheville NC" ng-model = "formOptions.origin">
               </div>
               <div class="col-sm-5">
                 <div class="nav-question"><h5>Where are you going?</h5></div>
-                <input type="text" class="form-control" placeholder="1313 Mockingbird Ln, Asheville NC">
+                <input type="text" class="form-control" placeholder="1313 Mockingbird Ln, Asheville NC" ng-model = "formOptions.destination">
               </div>
               <div class="col-sm-2">
                 <div class="nav-question"><h5>&nbsp;</h5></div>
-                <button type="submit" class="btn btn-default">GO!</button>
+                <button type="submit" ng-click = "goGetRoute(formOptions)" class="btn btn-default">GO!</button>
               </div>
             </div>
 
@@ -113,3 +114,5 @@
     </div><!-- /row -->
   </div><!-- /.container-fluid -->
 </nav>
+<div id="map" style = "height : 800px; width : 100%"></div>
+</div>
