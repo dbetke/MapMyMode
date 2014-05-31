@@ -134,6 +134,10 @@ body {
   background-color: #fc9206;
 }
 
+.navbar-form .btn-group.select-priority .btn.active {
+  background-color: #ed6d15;
+}
+
 .navbar-form .btn-group.select-mode {
   background-color: transparent;
   border-radius: 100px;
@@ -142,6 +146,16 @@ body {
 .navbar-form .btn-group.select-mode .btn {
   padding: .5em 1em;
   background-color: transparent;
+  border-radius: 100px;
+}
+
+.navbar-form .btn-group.select-mode > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.navbar-form .btn-group.select-mode > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-radius: 100px!important;
+}
+
+.navbar-form .btn-group.select-mode .btn.active {
+  background-color: #71ccff;
 }
 
 .navbar-form button[type="submit"] {
@@ -151,4 +165,15 @@ body {
   border-color: #fff;
 }
 
+.form-control::-webkit-input-placeholder {
+  color: #ccc;
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+/**** MAP !!!! ******/
+#map {
+  position: absolute!important;
+}
 
