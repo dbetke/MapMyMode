@@ -75,6 +75,12 @@ angular.module('trunkApp')
       var transType = "";
       if(data.transType.drive){
         transType = "driving"
+      }else if (data.transType.walk){
+        transType = "walking"
+      }else if (data.transType.bus){
+        transType = "transit"
+      }else if (data.transType.bike){
+        transType = "bicycling"
       }
       getRoute(data.origin, data.destination, transType);
     }
