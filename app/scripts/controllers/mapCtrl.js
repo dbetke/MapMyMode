@@ -46,7 +46,10 @@ angular.module('trunkApp').controller('mapCtrl', ['$scope', '$http', '$q',
 			//
 			getRoute('25 Howland Rd Asheville NC', '43 Wall Street Asheville NC', 'walking');
 			var annotationCallback = function(data){
-				console.log(data)
+				console.log(data);
+				$('#bs-example-navbar-collapse-1').collapse('hide');
+				$('#annotation-dialog').modal('show').css('z-index',1);
+				$('.modal-backdrop').removeClass("modal-backdrop");
 			}
 			modeMapper.addDrawingTool("point", annotationCallback);
 			// console.log(route);
