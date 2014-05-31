@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'mapmymode-font';
-	src:url('fonts/mapmymode-font.eot?-woesn5');
-	src:url('fonts/mapmymode-font.eot?#iefix-woesn5') format('embedded-opentype'),
-		url('fonts/mapmymode-font.woff?-woesn5') format('woff'),
-		url('fonts/mapmymode-font.ttf?-woesn5') format('truetype'),
-		url('fonts/mapmymode-font.svg?-woesn5#mapmymode-font') format('svg');
+	src:url('fonts/mapmymode-font.eot?2ca7yn');
+	src:url('fonts/mapmymode-font.eot?#iefix2ca7yn') format('embedded-opentype'),
+		url('fonts/mapmymode-font.woff?2ca7yn') format('woff'),
+		url('fonts/mapmymode-font.ttf?2ca7yn') format('truetype'),
+		url('fonts/mapmymode-font.svg?2ca7yn#mapmymode-font') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star:before {
+	content: "\e60c";
+}
+.icon-location:before {
+	content: "\e60d";
+}
+.icon-comment:before {
+	content: "\e60e";
+}
 .icon-walk:before {
 	content: "\e600";
 }
