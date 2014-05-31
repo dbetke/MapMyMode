@@ -98,12 +98,15 @@ body {
   margin-top: 1em;
 }
 
+.navbar-brand img {
+  width:100%;
+}
 /* navbar icons */
 .navbar-form .btn-group .btn  {
   border: none;
   color: #fff;
   line-height: 1;
-  margin-right: .25em;
+  /*margin-right: .25em;*/
 }
 
 .navbar-form .btn-group .btn span[class*="icon-"] {
@@ -177,3 +180,14 @@ body {
   position: absolute!important;
 }
 
+
+/**** MODALS!!!! ********/
+.modal-backdrop {
+  display: none!important;
+}
+
+#annotation-dialog .modal-dialog {
+  top: 75px;
+  left: 25px;
+  float: left;
+}
