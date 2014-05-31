@@ -106,7 +106,7 @@ body {
   border: none;
   color: #fff;
   line-height: 1;
-  margin-right: .25em;
+  /*margin-right: .25em;*/
 }
 
 .navbar-form .btn-group .btn span[class*="icon-"] {
