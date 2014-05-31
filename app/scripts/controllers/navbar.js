@@ -6,6 +6,10 @@ angular.module('trunkApp')
       'title': 'Home',
       'link': '/'
     }];
+    // $scope.transitTypes = [{
+    // 	'value': 'Walk',
+    // 	''
+    // }];
     
     $scope.isActive = function(route) {
       return route === $location.path();

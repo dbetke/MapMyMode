@@ -1,7 +1,7 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -34,7 +34,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    /*max-width: 730px;*/
   }
 }
 .container-narrow > hr {
@@ -77,3 +77,78 @@ body {
     border-bottom: 0;
   }
 }
+
+
+/*** extend bootstrap styles  ***/
+/**  ------------------------- **/
+
+/* navbar titles and other text */
+.navbar-nav .nav-question {
+  float: none;
+  clear: both;
+}
+.nav-question h4, .nav-question h5 {
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: .1em;
+  margin: .25em 0;
+}
+
+.nav-question h5 {
+  margin-top: 1em;
+}
+
+/* navbar icons */
+.navbar-form .btn-group .btn  {
+  border: none;
+  color: #fff;
+  line-height: 1;
+  margin-right: .25em;
+}
+
+.navbar-form .btn-group .btn span[class*="icon-"] {
+  color: #fff;
+  font-size: 4em;
+}
+
+.navbar-form .btn-group.misc-icons .btn {
+  background-color: transparent;
+}
+
+.navbar-form .btn-group.misc-icons .btn span[class*="icon-"] {
+  font-size: 2em;
+}
+
+.navbar-form .btn-group .btn .label-text {
+  font-size: 1.1em;
+  display: block;
+  padding: .5em .5em 0;
+}
+
+.navbar-form .btn-group.select-priority {
+  border-radius: 4px;
+}
+
+.navbar-form .btn-group.select-priority .btn {
+  padding: 4px .3em;
+  background-color: #fc9206;
+}
+
+.navbar-form .btn-group.select-mode {
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+.navbar-form .btn-group.select-mode .btn {
+  padding: .5em 1em;
+  background-color: transparent;
+}
+
+.navbar-form button[type="submit"] {
+  color: #fff;
+  font-size: 1em;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+
