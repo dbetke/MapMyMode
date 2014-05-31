@@ -132,7 +132,8 @@ body {
   border-radius: 4px;
 }
 
-.navbar-form .btn-group.select-priority .btn {
+.navbar-form .btn-group.select-priority .btn,
+.btn.orange-btns {
   padding: 4px .3em;
   background-color: #fc9206;
 }
@@ -190,4 +191,28 @@ body {
   top: 75px;
   left: 25px;
   float: left;
+}
+
+.btn.orange-btns {
+  color: #fff;
+  float: right;
+  margin-right: 2em;
+  padding: .25em;
+  font-size: 1.2em;
+}
+
+.noclick-icons span.address-caption {
+  font-size: 11px;
+  color: #bbb;
+  font-style: italic;
+  margin: 0;
+}
+
+.noclick-icons {
+  font-size: 3em;
+  color: #1d8fdb;
+}
+
+.noclick-icons span {
+  margin: .25em .5em;
 }
